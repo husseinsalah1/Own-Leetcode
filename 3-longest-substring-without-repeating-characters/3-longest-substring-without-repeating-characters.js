@@ -3,7 +3,7 @@
  * @return {number}
  */
 var lengthOfLongestSubstring = function(s) {
-  if (s.length === 0 || s.length === 1) {
+    if (s.length === 0 || s.length === 1) {
     return s.length;
   }
   var start = 0;
@@ -26,7 +26,6 @@ var lengthOfLongestSubstring = function(s) {
     arr[str] = str.length;
     start = start + 1;
   }
-  arr[str] = str.length;
 
   return Object.values(arr).sort((a, b) => b - a)[0];
 };
